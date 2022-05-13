@@ -1,0 +1,24 @@
+{
+  "name": "create-unodespace",
+  "description": "A Node.js workspace template for and by Unately.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/Unately/uNodeSpace#readme",
+  "author": "Uantely <hello@unately.com> (https://unately.com)",
+  "contributors": [ "Jqshuv <jqshuv@gmail.com> (https://jqshuv.xyz)" ],
+  "bin": "src/cli.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Unately/uNodeSpace.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Unately/uNodeSpace/issues"
+  },
+  "files": [
+    "src",
+    "templates"
+  ],
+  "dependencies": {
+    "create-initializer": "^1.2.0"
+  },
+  "license": "MIT"
+}
