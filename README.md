@@ -2,8 +2,6 @@
 
 The Node.js workspace template for and by Unately.
 
-> created by [create-initializer](https://github.com/ClassicOldSong/create-initializer).
-
 ## Use
 
 ```bash
