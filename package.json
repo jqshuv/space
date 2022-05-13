@@ -1,27 +1,27 @@
 {
   "name": "@unately/create-uworkspace",
-  "description": "A Node.js workspace template for and by Unately.",
+  "description": "A workspace template for and by Unately.",
   "version": "0.1.1",
   "homepage": "https://github.com/Unately/uWorkspace#readme",
   "author": "Uantely <hello@unately.com> (https://unately.com)",
   "contributors": [ "Jqshuv <jqshuv@gmail.com> (https://jqshuv.xyz)" ],
-  "bin": "src/cli.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/Unately/uWorkspace.git"
   },
-  "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
-  },
   "bugs": {
     "url": "https://github.com/Unately/uWorkspace/issues"
   },
+  "bin": "src/cli.js",
   "files": [
     "src",
     "templates"
   ],
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  },
   "dependencies": {
-    "create-initializer": "^1.2.0"
+    "create-create-app": "^7.2.0"
   },
   "license": "MIT"
 }

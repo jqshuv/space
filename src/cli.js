@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const { resolve } = require('path');
-const { create } = require('create-initializer');
+const { create } = require('create-create-app');
 
 const templateRoot = resolve(__dirname, '..', 'templates');
 
@@ -10,12 +10,10 @@ This is a caveat!
 You can change this in \`src/cli.js\`.
 `;
 
-// See https://github.com/ClassicOldSong/create-initializer/blob/master/README.md for the full option list.
+// See https://github.com/uetchy/create-create-app/blob/master/README.md for other options.
 
-create('create-unodespace', {
+create('create-uworkspace', {
   templateRoot,
-  defaultTemplate: 'my-template',
-  templatePrefix: 'template-',
   extra: {
     architecture: {
       type: 'list',
