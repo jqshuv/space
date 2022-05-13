@@ -5,6 +5,9 @@
   "homepage": "https://github.com/Unately/uWorkspace#readme",
   "author": "Uantely <hello@unately.com> (https://unately.com)",
   "contributors": [ "Jqshuv <jqshuv@gmail.com> (https://jqshuv.xyz)" ],
+  "scripts": {
+    "publish": "npm publish"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Unately/uWorkspace.git"
