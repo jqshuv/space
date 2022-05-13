@@ -8,7 +8,7 @@
   "bin": "src/cli.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Unately/uNodeSpace"
+    "url": "https://github.com/Unately/uNodeSpace.git"
   },
   "bugs": {
     "url": "https://github.com/Unately/uNodeSpace/issues"
