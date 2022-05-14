@@ -1,5 +1,5 @@
 {
-  "name": "@unately/create-uworkspace",
+  "name": "create-uworkspace",
   "description": "A workspace template for and by Unately.",
   "version": "0.1.3",
   "homepage": "https://github.com/Unately/uWorkspace#readme",
@@ -21,7 +21,7 @@
     "templates"
   ],
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
+    "registry":"https://registry.npmjs.org"
   },
   "dependencies": {
     "create-create-app": "^7.2.0"
