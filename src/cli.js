@@ -24,17 +24,17 @@ create('create-unodespace', {
   extra: {
     contact_email: {
       type: 'string',
-      describe: 'The email address of the contact person for this project',
+      describe: 'contact email',
       prompt: 'always',
     },
     twitter_name: {
       type: 'string',
-      describe: 'Your Twitter username for the Readme',
+      describe: 'twitter name',
       prompt: 'always',
     },
     repository: {
       type: 'string',
-      describe: 'The repository URL for this project (without the .git)',
+      describe: 'repository url',
       prompt: 'always',
     },
   },
