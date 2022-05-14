@@ -12,8 +12,9 @@ You can change this in \`src/cli.js\`.
 
 // See https://github.com/uetchy/create-create-app/blob/master/README.md for other options.
 
-create('create-uworkspace', {
+create('create-unodespace', {
   templateRoot,
+  promptForTemplate: true,
   extra: {
     architecture: {
       type: 'list',

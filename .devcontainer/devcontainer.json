@@ -16,7 +16,7 @@
 		"files.autoSave": "afterDelay",
 		"licenser.author": "Unately",
 		"licenser.license": "MIT",
-		"licenser.projectName": "uWorkspace",
+		"licenser.projectName": "uNodeSpace",
 		"conventionalCommits.promptCI": true
 	},
 	// Add the IDs of extensions you want installed when the container is created.
