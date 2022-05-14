@@ -104,7 +104,7 @@ module.exports = {
 						emoji: '🗑',
 					},
                     merge: {
-						description: 'Merges a pull request.',
+						description: 'Merges a pull request',
 						title: 'Merge',
 						emoji: '🔩',
 					},
