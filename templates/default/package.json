@@ -5,11 +5,14 @@
   "author": "{{contact}}",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
     "url": "{{repository}}"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
   },
   "license": "{{license}}"
 }
