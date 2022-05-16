@@ -14,10 +14,6 @@ workspace:
   configure:
     start:
       value:
-        - name: "install curl"
-          command: |
-            apt update
-            apt install -y curl
         - name: "Create organization directory"
           command: "mkdir -p /home/coder/unodespace"
         - name: "Add GitHub to known hosts"
