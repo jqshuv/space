@@ -22,7 +22,7 @@ workspace:
         - name: "Clone Git Project"
           command: "git clone git@github.com:unately/nodespace.git"
           continue-on-error: false
-          directory: /home/coder/unodespace
+          directory: /home/coder/nodespace
         - name: Install dependencies
           command: "npm ci"
           directory: /home/coder/nodespace
