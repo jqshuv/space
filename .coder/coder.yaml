@@ -1,0 +1,32 @@
+version: 0.2
+workspace:
+  type: kubernetes
+  specs:
+    kubernetes:
+      image:
+        value: index.docker.io/codercom/enterprise-node:ubuntu
+      cpu:
+        value: 1
+      memory:
+        value: 4
+      disk:
+        value: 8
+  configure:
+    start:
+      value:
+        - name: "install curl"
+          command: |
+            apt update
+            apt install -y curl
+        - name: "Create organization directory"
+          command: "mkdir -p /home/coder/unodespace"
+        - name: "Add GitHub to known hosts"
+          command:
+            "sudo ssh-keyscan -H github.com >> /home/coder/.ssh/known_hosts"
+        - name: "Clone Git Project"
+          command: "git clone git@github.com:unately/nodespace.git"
+          continue-on-error: false
+          directory: /home/coder/unodespace
+        - name: Install dependencies
+          command: "npm ci"
+          directory: /home/coder/nodespace
