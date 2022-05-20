@@ -5,12 +5,12 @@
  https://opensource.org/licenses/MIT
 -->
 
-# Create uWorkspace
+# Create Nodespace
 
 The Node.js workspace template for and by Unately.
 
 ## Use
 
 ```bash
-npx create-uworkspace <name>
+npx create-nodespace <name>
 ```
