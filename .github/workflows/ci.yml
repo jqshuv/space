@@ -43,11 +43,11 @@ jobs:
       - name: Install dependencies 👨🏻‍💻
         run: npm ci
 
-	  - name: Build dist 📦
-	    run: npm run buildDist
+      - name: Build dist 📦
+        run: npm run buildDist
 
-	  - name: Upload artifacts ⬆️
-	  	uses: actions/upload-artifact@v3.1.0
-		with:
-    		name: dists
-    		path: dist/* 
+      - name: Upload artifacts ⬆️
+          uses: actions/upload-artifact@v3.1.0
+        with:
+            name: dists
+            path: dist/* 
