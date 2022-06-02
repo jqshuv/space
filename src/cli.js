@@ -38,6 +38,6 @@ create('create-unodespace', {
       prompt: 'always',
     },
   },
-  after: ({ answers }) => console.log(`Ok you chose ${answers.contact_email}.`),
+//   after: ({ answers }) => console.log(`Ok you chose ${answers.contact_email}.`),
   caveat,
 });
