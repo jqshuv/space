@@ -47,7 +47,7 @@ jobs:
         run: npm run buildDist
 
       - name: Upload artifacts ⬆️
-          uses: actions/upload-artifact@v3.1.0
+        uses: actions/upload-artifact@v3.1.0
         with:
             name: dists
             path: dist/* 
