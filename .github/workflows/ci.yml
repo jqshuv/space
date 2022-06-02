@@ -53,8 +53,3 @@ jobs:
             name: dists-${{ matrix.os }}-node${{ matrix.node }}
             path: dist/* 
 
-      - name: Upload master artifact ⬆️
-        uses: actions/upload-artifact@v3.1.0
-        with:
-            name: all-dists
-            path: dist/* 
