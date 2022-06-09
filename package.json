@@ -24,7 +24,7 @@
     "templates"
   ],
   "dependencies": {
-    "create-create-app": "^7.2.0"
+    "create-create-app": "^7.2.1"
   },
   "devDependencies": {
     "conventional-changelog-conventionalcommits": "^4.6.3",
