@@ -27,7 +27,7 @@
     "create-create-app": "^7.2.1"
   },
   "devDependencies": {
-    "conventional-changelog-conventionalcommits": "^4.6.3",
+    "conventional-changelog-conventionalcommits": "^5.0.0",
     "pkg": "^5.7.0"
   },
   "pkg": {
