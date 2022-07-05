@@ -1,42 +1,55 @@
 {
-  "name": "create-nodespace",
-  "description": "A Node.js workspace template for and by Unately.",
-  "version": "0.1.3",
-  "homepage": "https://github.com/Unately/uNodeSpace#readme",
-  "author": "Uantely <hello@unately.com> (https://unately.com)",
-  "contributors": [
-    "Jqshuv <jqshuv@gmail.com> (https://jqshuv.xyz)"
-  ],
-  "scripts": {
-    "publish": "npm publish",
-    "buildDist": "pkg src/cli.js -c package.json"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Unately/uNodeSpace.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Unately/uNodeSpace/issues"
-  },
-  "bin": "src/cli.js",
-  "files": [
-    "src",
-    "templates"
-  ],
-  "dependencies": {
-    "create-create-app": "^7.3.0"
-  },
-  "devDependencies": {
-    "conventional-changelog-conventionalcommits": "^5.0.0",
-    "pkg": "^5.7.0"
-  },
-  "pkg": {
-    "assets": [
-	  "templates/**/*",
-      "src/**/*"
-    ],
-	"targets": [ "node16-linux-x64", "node16-macos-x64", "node16-win-x64" ],
-    "outputPath": "dist"
-  },
-  "license": "MIT"
+	"name": "create-nodespace",
+	"description": "A Node.js workspace template for and by Unately.",
+	"version": "0.1.3",
+	"homepage": "https://github.com/Unately/uNodeSpace#readme",
+	"author": "Unately <hello@unately.com> (https://unately.com)",
+	"contributors": [
+		"Jqshuv <jqshuv@gmail.com> (https://jqshuv.xyz)"
+	],
+	"scripts": {
+		"release": "release-it",
+		"buildDist": "pkg src/cli.js -c package.json",
+		"prepare": "husky install"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Unately/uNodeSpace.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Unately/uNodeSpace/issues"
+	},
+	"bin": "src/cli.js",
+	"files": [
+		"src",
+		"templates"
+	],
+	"dependencies": {
+		"create-create-app": "^7.3.0"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^17.0.3",
+		"@commitlint/config-conventional": "^17.0.3",
+		"conventional-changelog-conventionalcommits": "^5.0.0",
+		"husky": "^8.0.1",
+		"mdmod": "^2.0.0",
+		"pkg": "^5.7.0",
+		"release-it": "^15.1.1"
+	},
+	"lint-staged": {
+		"*.md": "mdmod"
+	},
+	"pkg": {
+		"assets": [
+			"templates/**/*",
+			"src/**/*"
+		],
+		"targets": [
+			"node16-linux-x64",
+			"node16-macos-x64",
+			"node16-win-x64"
+		],
+		"outputPath": "dist"
+	},
+	"license": "MIT"
 }
