@@ -1,0 +1,54 @@
+# Copyright (c) 2022 Joshua Schmitt
+#
+# This software is released under the MIT License.
+# https://opensource.org/licenses/MIT
+
+name: ci
+
+on:
+    push:
+        branches:
+            - master
+    pull_request:
+        branches:
+            - master
+    workflow_dispatch:
+
+jobs:
+    ci:
+        runs-on: ${{ matrix.os }}
+
+        strategy:
+            matrix:
+                os: [ubuntu-latest, windows-latest]
+                node: [16, 18]
+
+        steps:
+            - name: Checkout 🛎
+              uses: actions/checkout@master
+
+            - name: Setup node env 🏗
+              uses: actions/setup-node@v3.2.0
+              with:
+                  node-version: ${{ matrix.node }}
+                  check-latest: true
+
+            - name: Cache node_modules 📦
+              uses: actions/cache@v2.1.4
+              with:
+                  path: ~/.npm
+                  key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+                  restore-keys: |
+                      ${{ runner.os }}-node-
+
+            - name: Install dependencies 👨🏻‍💻
+              run: npm ci
+
+            - name: Build dist 📦
+              run: npm run buildDist
+
+            - name: Upload artifacts ⬆️
+              uses: actions/upload-artifact@v3.1.0
+              with:
+                  name: dists-${{ matrix.os }}-node${{ matrix.node }}
+                  path: dist/*
