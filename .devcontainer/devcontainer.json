@@ -1,5 +1,5 @@
 // Copyright (c) 2022 Unately
-// 
+//
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
@@ -21,12 +21,12 @@
 		"files.autoSave": "afterDelay",
 		"licenser.author": "Unately",
 		"licenser.license": "MIT",
-		"licenser.projectName": "uNodeSpace",
+		"licenser.projectName": "NodeSpace",
 		"conventionalCommits.promptCI": true
 	},
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
-		"dbaeumer.vscode-eslint",
+		// "dbaeumer.vscode-eslint",
 		"editorconfig.editorconfig",
 		"vector-of-bool.gitflow",
 		"github.copilot",
@@ -39,12 +39,12 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "yarn install",
+	"postCreateCommand": "yarn install",
 
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "node",
 	"features": {
-		// "docker-in-docker": "latest",
+		"docker-in-docker": "latest",
 		"git": "latest",
 		"git-lfs": "latest"
 	}
