@@ -14,7 +14,7 @@ function random_item(items) {
  * @param  {string[]} hellos
  */
 function talk(hellos) {
-	console.log(random_item(hellos) + ' World');
+	console.log(`${random_item(hellos)} World`);
 	
 };
 
