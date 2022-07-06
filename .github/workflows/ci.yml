@@ -33,7 +33,11 @@ jobs:
                   node-version: ${{ matrix.node }}
                   check-latest: true
 
-            - name: Cache node_modules 📦
+            - name: Get yarn cache dir 🗃️
+              id: yarn-cache-dir-path
+              run: echo "::set-output name=dir::$(yarn cache dir)"
+
+            - name: Cache Yarn 📦
               uses: actions/cache@v3
               id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
               with:
