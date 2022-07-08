@@ -21,6 +21,7 @@
 		"templates"
 	],
 	"dependencies": {
+		"consola": "^2.15.3",
 		"create-create-app": "^7.3.0",
 		"shelljs": "^0.8.5"
 	},
