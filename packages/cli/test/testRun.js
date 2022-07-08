@@ -27,4 +27,4 @@ shelljs.echo('y');
 shelljs.echo('\n');
 shelljs.echo('y');
 shelljs.echo('\n');
-shell.exit(1);
+shelljs.exit(1);
