@@ -1,0 +1,10 @@
+# Copyright (c) 2022 Joshua Schmitt
+#
+# This software is released under the MIT License.
+# https://opensource.org/licenses/MIT
+
+blank_issues_enabled: false
+contact_links:
+    - name: 🍺 Discord Server
+      url: https://discord.gg/qrd
+      about: Our German discord server.
