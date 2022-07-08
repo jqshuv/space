@@ -14,7 +14,7 @@ function random_item(items) {
  * @param  {array} script - Array of lines to be executed
  */
 function talk(script) {
-	console.log(random_item(script) + ' World');
+	console.log(`${random_item(script)} World`);
 }
 
 talk(hellotypes);
