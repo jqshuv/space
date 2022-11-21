@@ -27,7 +27,7 @@
 		"@commitlint/cli": "^17.2.0",
 		"@commitlint/config-conventional": "^17.1.0",
 		"conventional-changelog-conventionalcommits": "^5.0.0",
-		"husky": "^8.0.1",
+		"husky": "^8.0.2",
 		"release-it": "^15.5.0",
 		"turbo": "^1.6.1"
 	},
