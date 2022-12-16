@@ -12,9 +12,9 @@ The Workspace template for and by Unately.
 ## Use
 
 ```bash
-yarn create space
+yarn create space <name>
 ```
 
 ```bash
-npx create-space <name>
+npm init space <name>
 ```
