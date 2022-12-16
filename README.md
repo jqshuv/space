@@ -5,12 +5,16 @@
  https://opensource.org/licenses/MIT
 -->
 
-# Create Nodespace
+# Create Space
 
-The Node.js workspace template for and by Unately.
+The Workspace template for and by Unately.
 
 ## Use
 
 ```bash
-npx create-nodespace <name>
+yarn create space
+```
+
+```bash
+npx create-space <name>
 ```
