@@ -1,19 +1,20 @@
 {
-	"name": "create-nodespace",
-	"description": "A Node.js workspace template for and by Unately.",
+	"name": "create-space",
+	"description": "A workspace template for and by Jqshuv.",
 	"version": "0.1.3",
-	"homepage": "https://github.com/jqshuv/NodeSpace#readme",
-	"author": "Jqshuv <jqshuv@gmail.com> (https://jqshuv.xyz)",
+	"homepage": "https://github.com/jqshuv/space#readme",
+	"author": "Jqshuv <jqshuv@gmail.com>",
+	"license": "MIT",
 	"scripts": {
 		"build": "pkg src/cli.js -c package.json",
 		"test": "./dist/create-nodespace-linux"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/jqshuv/NodeSpace.git"
+		"url": "https://github.com/jqshuv/space.git"
 	},
 	"bugs": {
-		"url": "https://github.com/jqshuv/NodeSpace/issues"
+		"url": "https://github.com/jqshuv/space/issues"
 	},
 	"bin": "src/cli.js",
 	"files": [
@@ -39,6 +40,5 @@
 			"node16-win-x64"
 		],
 		"outputPath": "dist"
-	},
-	"license": "MIT"
+	}
 }
