@@ -6573,9 +6573,9 @@ validate-npm-package-name@^3.0.0:
     builtins "^1.0.3"
 
 vm2@^3.9.8:
-  version "3.9.10"
-  resolved "https://registry.npmjs.org/vm2/-/vm2-3.9.10.tgz"
-  integrity sha512-AuECTSvwu2OHLAZYhG716YzwodKCIJxB6u1zG7PgSQwIgAlEaoXH52bxdcvT8GkGjnYK7r7yWDW0m0sOsPuBjQ==
+  version "3.9.14"
+  resolved "https://registry.yarnpkg.com/vm2/-/vm2-3.9.14.tgz#964042b474cf1e6e4f475a39144773cdb9deb734"
+  integrity sha512-HgvPHYHeQy8+QhzlFryvSteA4uQLBCOub02mgqdR+0bN/akRZ48TGB1v0aCv7ksyc0HXx16AZtMHKS38alc6TA==
   dependencies:
     acorn "^8.7.0"
     acorn-walk "^8.2.0"
