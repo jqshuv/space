@@ -1,38 +1,33 @@
 {
-	"name": "@jqshuv/space",
+	"name": "create-space",
 	"version": "0.0.0",
 	"description": "A workspace template for and by Jqshuv.",
 	"license": "MIT",
 	"private": true,
-	"author": "Jqshuv <jqshuv@gmail.com> (https://jqshuv.xyz)",
+	"author": {
+		"name": "jqshuv",
+		"email": "me@jqshuv.com"
+	},
+	"bin": "dist/cli.js",
 	"scripts": {
-		"build": "turbo run build",
-		"release": "release-it",
+		"build": "tsup src/cli.ts --minify",
+		"clean": "shx rm -rf lib",
+		"dev": "tsup src/cli.ts --watch",
 		"prepare": "husky install"
 	},
-	"keywords": [
-		"node",
-		"workspace",
-		"template"
-	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/jqshuv/NodeSpace.git"
+		"url": "https://github.com/jqshuv/space"
 	},
-	"bugs": {
-		"url": "https://github.com/discordjs/discord.js/issues"
+	"dependencies": {
+		"create-create-app": "^7.3.0"
 	},
-	"homepage": "https://github.com/jqshuv/NodeSpace#readme",
 	"devDependencies": {
 		"@commitlint/cli": "^17.2.0",
 		"@commitlint/config-conventional": "^17.1.0",
-		"conventional-changelog-conventionalcommits": "^5.0.0",
 		"husky": "^8.0.2",
-		"lerna": "^7.1.0",
 		"release-it": "^15.5.0",
-		"turbo": "^1.6.1"
+		"tsup": "^8.3.0"
 	},
-	"workspaces": [
-		"packages/*"
-	]
+	"packageManager": "pnpm@9.12.1+sha512.e5a7e52a4183a02d5931057f7a0dbff9d5e9ce3161e33fa68ae392125b79282a8a8a470a51dfc8a0ed86221442eb2fb57019b0990ed24fab519bf0e1bc5ccfc4"
 }

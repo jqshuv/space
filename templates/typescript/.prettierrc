@@ -1,0 +1,15 @@
+{
+	"printWidth": 140,
+	"singleQuote": true,
+	"semi": true,
+	"useTabs": false,
+	"tabWidth": 4,
+	"overrides": [
+		{
+			"files": ".github/**/*.yml",
+			"options": {
+				"tabWidth": 2
+			}
+		}
+	]
+}
