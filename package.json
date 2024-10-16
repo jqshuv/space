@@ -3,7 +3,6 @@
 	"version": "0.1.1",
 	"description": "A workspace template for and by Jqshuv.",
 	"license": "MIT",
-	"private": true,
 	"author": {
 		"name": "jqshuv",
 		"email": "me@jqshuv.com"
