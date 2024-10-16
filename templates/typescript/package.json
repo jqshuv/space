@@ -1,18 +1,20 @@
 {
 	"name": "{{kebab name}}",
 	"version": "0.0.0",
-	"description": "{{description}}",
 	"private": true,
+	"description": "{{description}}",
 	"author": "{{contact}}",
 	"license": "{{license}}",
-    "scripts": {
+	"repository": "{{repository}}",
+	"scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
     "test": "vitest",
-  "commitlint": "commitlint --edit"
+  	"commitlint": "commitlint --edit"
 	},
-	"repository": {
-	  "type": "git",
-	  "url": "{{repository}}"
+	"devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "husky": "^9.1.6"
 	}
 }

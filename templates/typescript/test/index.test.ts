@@ -5,9 +5,9 @@
 
 
 import { test, expect } from 'vitest';
-import execa from 'execa';
+import { execa } from 'execa';
 
 test('should greet the world', async () => {
 	const { stdout } = await execa('node', ['dist/index.js']);
 	expect(stdout).toBe('Hello, world!');
-}
+});

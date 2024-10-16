@@ -11,10 +11,10 @@ import { create } from 'create-create-app';
 create('create-greet', {
 	templateRoot: resolve(__dirname, '..', 'templates'),
 	extra: {
-		language: {
+		repository: {
 			type: 'input',
-			describe: 'greeting language',
-			default: 'en',
+			describe: 'Repository URL (without trailing slash)',
+			default: 'https://github.com/jqshuv/space',
 			prompt: 'if-no-arg',
 		},
 	},
