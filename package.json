@@ -12,7 +12,7 @@
 		"build": "tsup src/cli.ts --minify",
 		"clean": "shx rm -rf lib",
 		"dev": "tsup src/cli.ts --watch",
-		"prepare": "husky install"
+		"prepare": "husky"
 	},
 	"repository": {
 		"type": "git",

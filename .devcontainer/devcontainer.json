@@ -1,51 +1,59 @@
-// Copyright (c) 2022 Unately
-//
-// This software is released under the MIT License.
-// https://opensource.org/licenses/MIT
-
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.234.0/containers/javascript-node
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
 {
-	"name": "Node.js",
-	"build": {
-		"dockerfile": "Dockerfile",
-		// Update 'VARIANT' to pick a Node version: 18, 16, 14.
-		// Append -bullseye or -buster to pin to an OS version.
-		// Use -bullseye variants on local arm64/Apple Silicon.
-		"args": { "VARIANT": "16-bullseye" }
+	"name": "space",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+	"features": {
+		"ghcr.io/devcontainers/features/git-lfs:1": {
+			"autoPull": true,
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/github-cli:1": {
+			"installDirectlyFromGitHubRelease": true,
+			"version": "latest"
+		},
+		"ghcr.io/guiyomh/features/just:0": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/node:1": {
+			"version": "lts",
+			"pnpmVersion": "latest",
+			"nvmVersion": "latest"
+		}
 	},
 
-	// Set *default* container specific settings.json values on container create.
-	"settings": {
-		"git.autofetch": true,
-		"files.autoSave": "afterDelay",
-		"licenser.author": "Unately",
-		"licenser.license": "MIT",
-		"licenser.projectName": "NodeSpace",
-		"conventionalCommits.promptCI": true
-	},
-	// Add the IDs of extensions you want installed when the container is created.
-	"extensions": [
-		// "dbaeumer.vscode-eslint",
-		"editorconfig.editorconfig",
-		"vector-of-bool.gitflow",
-		"github.copilot",
-		"ymotongpoo.licenser",
-		"vivaxy.vscode-conventional-commits",
-		"usernamehw.todo-md"
-	],
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "yarn install",
+	"postCreateCommand": "pnpm install",
 
-	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-	"remoteUser": "node",
-	"features": {
-		"docker-in-docker": "latest",
-		"git": "latest",
-		"git-lfs": "latest"
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"git.autofetch": true,
+				"files.autoSave": "afterDelay",
+				"licenser.author": "Unately",
+				"licenser.license": "MIT",
+				"licenser.projectName": "space",
+				"conventionalCommits.promptCI": true
+			},
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				// "dbaeumer.vscode-eslint",
+				"editorconfig.editorconfig",
+				"github.copilot",
+				"ymotongpoo.licenser",
+				"vivaxy.vscode-conventional-commits"
+			]
+		}
 	}
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
 }

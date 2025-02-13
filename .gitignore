@@ -214,4 +214,6 @@ dist
 .history
 .ionide
 
+.pnpm-store
+
 # End of https://www.toptal.com/developers/gitignore/api/node,pnpm,visualstudiocode,turbo,git,macos
