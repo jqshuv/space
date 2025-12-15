@@ -22,7 +22,7 @@
 		"create-create-app": "^7.3.0"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^19.7.1",
+		"@commitlint/cli": "^20.2.0",
 		"@commitlint/config-conventional": "^20.2.0",
 		"husky": "^9.1.7",
 		"release-it": "^19.0.3",
