@@ -23,7 +23,7 @@ importers:
         version: 9.1.7
       release-it:
         specifier: ^19.0.3
-        version: 19.2.1(@types/node@25.0.2)
+        version: 19.2.2(@types/node@25.0.2)
       tsup:
         specifier: ^8.3.0
         version: 8.5.1(jiti@2.6.1)(typescript@5.6.3)
@@ -710,8 +710,8 @@ packages:
   babel-runtime@6.26.0:
     resolution: {integrity: sha512-ITKNuq2wKlW1fJg9sSW52eepoYgZBggvOAHC0u/CYu/qxQ9EVzThCgR69BnSXLHjy2f7SY5zaQ4yt7H9ZVxY2g==}
 
-  basic-ftp@5.0.5:
-    resolution: {integrity: sha512-4Bcg1P8xhUuqcii/S0Z9wiHIrQVPMermM1any+MX5GeGD7faD3/msQUDGLol9wOcz4/jbg/WJnGqoJF6LiBdtg==}
+  basic-ftp@5.1.0:
+    resolution: {integrity: sha512-RkaJzeJKDbaDWTIPiJwubyljaEPwpVWkm9Rt5h9Nd6h7tEXTJ3VB4qxdZBioV7JO5yLUaOKwz7vDOzlncUsegw==}
     engines: {node: '>=10.0.0'}
 
   before-after-hook@4.0.0:
@@ -1715,8 +1715,8 @@ packages:
   regenerator-runtime@0.14.1:
     resolution: {integrity: sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw==}
 
-  release-it@19.2.1:
-    resolution: {integrity: sha512-Tu9kZKtCJkrLG6nD0OLbVdVP8wHgpQBpRvtZQmdEgGHDwg0FiiHmdnnPskTQllPWJFMtpHo3O7MHtr8/AWEFbA==}
+  release-it@19.2.2:
+    resolution: {integrity: sha512-57TBUTBbBXLJsPufYS+Hsb1dSZKZ0ktiYgPkNc3Pmlq/QQtH9X0oD0SG2ib5CsXHTI11m19pyK60NXmvtE6cLg==}
     engines: {node: ^20.12.0 || >=22.0.0}
     hasBin: true
 
@@ -2670,7 +2670,7 @@ snapshots:
       core-js: 2.6.12
       regenerator-runtime: 0.11.1
 
-  basic-ftp@5.0.5: {}
+  basic-ftp@5.1.0: {}
 
   before-after-hook@4.0.0: {}
 
@@ -3121,7 +3121,7 @@ snapshots:
 
   get-uri@6.0.5:
     dependencies:
-      basic-ftp: 5.0.5
+      basic-ftp: 5.1.0
       data-uri-to-buffer: 6.0.2
       debug: 4.4.3
     transitivePeerDependencies:
@@ -3682,7 +3682,7 @@ snapshots:
 
   regenerator-runtime@0.14.1: {}
 
-  release-it@19.2.1(@types/node@25.0.2):
+  release-it@19.2.2(@types/node@25.0.2):
     dependencies:
       '@nodeutils/defaults-deep': 1.1.0
       '@octokit/rest': 22.0.1
