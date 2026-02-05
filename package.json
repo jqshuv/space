@@ -9,10 +9,11 @@
 	},
 	"bin": "dist/cli.js",
 	"scripts": {
-		"build": "tsup src/cli.ts --minify",
+		"build": "bun build src/cli.ts --target=node --outfile=dist/cli.js --production",
 		"clean": "shx rm -rf lib",
 		"dev": "tsup src/cli.ts --watch",
-		"prepare": "husky"
+		"prepare": "husky",
+    "release": "release-it"
 	},
 	"repository": {
 		"type": "git",
@@ -22,11 +23,10 @@
 		"create-create-app": "^7.3.0"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^20.2.0",
-		"@commitlint/config-conventional": "^20.2.0",
+		"@commitlint/cli": "^20.4.1",
+		"@commitlint/config-conventional": "^20.4.1",
 		"husky": "^9.1.7",
-		"release-it": "^19.0.3",
-		"tsup": "^8.3.0"
-	},
-	"packageManager": "pnpm@10.3.0+sha512.ee592eda8815a8a293c206bb0917c4bb0ff274c50def7cbc17be05ec641fc2d1b02490ce660061356bd0d126a4d7eb2ec8830e6959fb8a447571c631d5a2442d"
+		"release-it": "^19.2.4",
+		"tsup": "^8.5.1"
+	}
 }
