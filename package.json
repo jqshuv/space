@@ -1,6 +1,6 @@
 {
 	"name": "create-space",
-	"version": "0.1.2",
+	"version": "0.1.4",
 	"description": "A workspace template for and by Jqshuv.",
 	"license": "MIT",
 	"author": {
@@ -13,7 +13,7 @@
 		"clean": "shx rm -rf lib",
 		"dev": "tsup src/cli.ts --watch",
 		"prepare": "husky",
-    "release": "release-it"
+		"release": "release-it"
 	},
 	"repository": {
 		"type": "git",
